@@ -29,8 +29,14 @@
     {{ recipeForDetail.description }}
   </div>
 </div>
+<br>
 <div class="row">
   <div class="col-sm-12">
-    Ingredients
+    <h5>Ingredients:</h5>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-action" *ngFor="let ingr of recipeForDetail.ingredients">
+        {{ ingr.name }} ({{ ingr.amount }})
+      </li>
+    </ul>
   </div>
 </div>

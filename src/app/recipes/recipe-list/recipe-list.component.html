@@ -7,15 +7,7 @@
 <hr>
 <div class="row">
   <div class="col-sm-12">
-    <a href="#" class="list-group-item list-group-item-action clearfix"
-    *ngFor="let recipe of recipes">
-      <div class="float-left">
-        <h4 class="card-title">{{ recipe.name }}</h4>
-        <p class="card-text">{{ recipe.description }}</p>
-      </div>
-      <span class="float-right"><img [src]="recipe.imagePath" alt="kurwa" class="img-fluid rounded" style="max-height: 75px;"></span>
-    </a>
-    <app-recipe-item></app-recipe-item>
+    <app-recipe-item *ngFor="let rec of recipes" [recipe]="rec"></app-recipe-item>
   </div>
 </div>
 

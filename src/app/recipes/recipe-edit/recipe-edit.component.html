@@ -62,7 +62,9 @@
               <input type="number" class="form-control" formControlName="amount">
             </div>
             <div class="col-sm-1">
-              <button class="btn btn-danger float-right" type="button">X</button>
+              <button class="btn btn-danger float-right"
+                      type="button"
+                      (click)="onDeleteIngredient(i)">X</button>
             </div>
           </div>
           <hr>
